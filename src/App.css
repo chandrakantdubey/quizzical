@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0;
+}
+.app {
+  width: 750px;
+  background-color: rgb(225, 236, 246);
+  min-height: 750px;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-image: url("./top1.svg"), url("./bottom1.svg");
+  background-position: 600px -50px, -50px 600px;
+}
+
+/* landing page */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 30px;
+}
+.landing-page h1 {
+  color: rgb(121, 60, 178);
+  text-shadow: 1px 1px 1px blue;
+  letter-spacing: 0.1em;
+  font-size: 5em;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+}
+.landing-page p {
+  margin: 0;
+  font-size: 1.5rem;
+  color: rgb(55, 5, 101);
+  font-weight: 900;
+  font-family: Courier, monospace;
+}
+
+/* Buttons */
+.btn {
+  background: linear-gradient(90deg, #00eeff 5%, #9ed0f0 90%);
+  border: 0;
+  box-shadow: 2px 2px 2px rgb(154, 150, 150);
+  color: rgb(55, 5, 101);
+  border-radius: 50px;
+  font-weight: 900;
+  outline: 0;
+  cursor: pointer;
+}
+.btn-start {
+  padding: 1em 1.8em;
+  font-size: 1.2rem;
+}
+
+.btn:hover {
+  transform: rotate(2deg);
+  color: blueviolet;
+  background: #9ed0f0;
+}
+
+/* Quizz */
+.quizz {
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: #292929;
+  position: relative;
+}
+.app {
+  border-radius: 20px;
+}
+.question {
+  font-size: 1.25em;
+  margin-bottom: 0.75em;
+}
+.option {
+  border: 1.5px solid #00eeff;
+  font-size: 0.9em;
+  padding: 0.25em 0.5em;
+  background-color: aliceblue;
+  border-radius: 1.2em;
+  cursor: pointer;
+}
+.options {
+  display: flex;
+  gap: 0.8em;
+}
+.question-with-option {
+  padding: 1.25em 1em;
+  border-bottom: 1px solid rgb(203, 203, 203);
+}
+
+.btn-footer,
+.playagain {
+  margin: 0.5em auto;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  position: absolute;
+  bottom: 1em;
+}
+.btn-footer,
+.playagain {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-play-again {
+  padding: 0.75em 1.5em;
+}
+.playagain span {
+  font-size: 1.2em;
+  margin-right: 1em;
+}
+.play {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
