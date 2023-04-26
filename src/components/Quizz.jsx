@@ -49,7 +49,7 @@ const Quizz = () => {
       );
     }
     fetchQuestions();
-  }, []);
+  }, [submitted]);
 
   function getAnswersArr() {
     let answersArr = [];
